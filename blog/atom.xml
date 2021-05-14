@@ -7,18 +7,18 @@ layout: feed
     <title> Shashikant Ghangare's Blog</title>
     <link href="https://shashikant-ghangare.github.io/blog/atom.xml" rel="self"/>
     <link href="https://shashikant-ghangare.github.io/blog"/>
-    <updated>{{ site.time | date_to_xmlshema }}</updated>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>https://shashikant-ghangare.github.io/blog</id>
     <author>
         <name>Shashikant Ghangare</name>
-        <email>shashikant.gahngare@outlook.in</email>
+        <email>shashikant.ghangare@outlook.in</email>
     </author>
 
-    {% for post i site.posts %}
+    {% for post in site.posts %}
         <entry>
             <title>{{ post.title }}</title>
             <link href="https://shashikant-ghangare.github.io{{ post.utl }}"/>
-            <updated>{{ post.data | date_to_xmlshema }}</updated>
+            <updated>{{ post.data | date_to_xmlschema }}</updated>
             <id>https://shashikant-ghangare.github.io{{ post.id }}</id>
             <content type="html">{{ post.content | xml_escape }}</content>
         </entry>
