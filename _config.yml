@@ -1,4 +1,20 @@
-name: Shashikant Ghangare, DIYist
+title: Shashikant Ghangare
+author: Shashikant Ghangare, DIYist
+
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+timezone: "Asia/Kolkata"
 markdown: kramdown
+highlighter: rouge
+paginate: 5
+
+kramdown:
+  input: GFM
 
 permalink: /blog/:year/:month/:day/:title
+
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
